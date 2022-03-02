@@ -8,7 +8,6 @@
   ],
   "repository": "git://github.com/the-chat/use-sso",
   "dependencies": {
-    "@the-chat/gen-context": "^1.0.8",
     "@the-chat/query": "^1.0.5",
     "@the-chat/use-logs": "^1.1.0",
     "axios": "^0.26.0",
@@ -18,6 +17,7 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
+    "@the-chat/gen-context": "^1.0.8",
     "@the-chat/use-user": "^1.0.7",
     "@the-chat/types": "^1.0.4"
   }
