@@ -1,0 +1,24 @@
+{
+  "name": "@the-chat/use-sso",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": "git://github.com/the-chat/use-sso",
+  "dependencies": {
+    "@the-chat/gen-context": "^1.0.8",
+    "@the-chat/query": "^1.0.5",
+    "@the-chat/use-logs": "^1.1.0",
+    "axios": "^0.26.0",
+    "firebase": "^9.6.7",
+    "next": "^12.1.0",
+    "next-i18next": "^10.4.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@the-chat/use-user": "^1.0.7",
+    "@the-chat/types": "^1.0.4"
+  }
+}
