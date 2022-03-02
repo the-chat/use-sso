@@ -13,13 +13,15 @@ const DEFAULT_SSO_HOST = "https://the-chat-sso.vercel.app" as const
 
 const getSSO = <T extends BaseUserData>(
   auth: Auth,
-  SSOHost: string = DEFAULT_SSO_HOST,
-  useUserData: UseMyContext<AllUserData<T>>
+  useUserData: UseMyContext<AllUserData<T>>,
+  SSOHost: string = DEFAULT_SSO_HOST
 ) => {
   const getSSOLink = () =>
     setQuery(SSOHost, {
       "return-url": location.toString(),
     })
+
+  const getTokenUrl = SSOHost + "/api/token"
 
   const useSSO = () => {
     const data = useUserData()
@@ -27,8 +29,6 @@ const getSSO = <T extends BaseUserData>(
     const {replace} = useRouter()
     const {t} = useTranslation("sso")
     const {handleError} = useLogs(() => {})
-
-    const getTokenUrl = SSOHost + "/api/token"
 
     const signInLocally = () => {
       if (!user && !loading && !error) {
