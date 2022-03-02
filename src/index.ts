@@ -67,3 +67,5 @@ const getSSO = <T extends BaseUserData>(
 
   return {getSSOLink, useSSO}
 }
+
+export default getSSO
