@@ -765,10 +765,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@the-chat/alert@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@the-chat/alert/-/alert-1.1.0.tgz#271237701c2731ca84f978512e93e62f2e4c922d"
-  integrity sha512-yTPefpT2cXn3MUiATeGxUoB3ZtRd2LlbWkAuVSrxgeIg0xZ35vK6wgaczGkVsatggXsM2t1rEHmteYbxLXBv5A==
+"@the-chat/alert@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@the-chat/alert/-/alert-1.1.1.tgz#b1d87b0511680ab63153dab7bad60f10579acb58"
+  integrity sha512-2j8eq7FnclwQBgXZ5JYhc3/qEvlh4tV9842gqni6kmybwYuavcMRomTIYqyeFAFnh7NwQBYlwLdLn2P1ochrmQ==
   dependencies:
     "@emotion/react" "^11.7.1"
     "@emotion/styled" "^11.6.0"
@@ -782,45 +782,45 @@
   resolved "https://registry.yarnpkg.com/@the-chat/config/-/config-1.0.0.tgz#b598026f8e7fcf82784cae05166b516f00511200"
   integrity sha512-XUd8JRk7Y9XaHNeVI6hffbwHO+ecwiTIIJc0GZV0TjzNcJqL+oYpH0XDzMHjMiIi1V4AQ6U92dnMLC1s8M+F/g==
 
-"@the-chat/db@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.5.tgz#330886e977168ffabb2e396c1d414fc7652dceae"
-  integrity sha512-scSCbd5eaYvTNK35Yl9cDI024M1FGSNxqoNlC97jmikmttAVoH7xJE2nWm/7EAf4x2rcbAPkE1ib9Ic6uSM9Ng==
+"@the-chat/db@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.6.tgz#37f56e86441fc0c2ac9bf2a1a31b7d49112f8a6d"
+  integrity sha512-BFsrSIChC2awV0CXknNJhl1RYP5biqQtcVrBGY7UOPwJ8SwfEFnJwqm63vlAuF87uZEAhmpmOI+1ybtJCUNCfw==
   dependencies:
     firebase "^9.6.7"
     react-firebase-hooks "^4.0.1"
 
-"@the-chat/gen-context@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.0.8.tgz#40c56e8dfbac0754ca5b6da467b912f3371f437d"
-  integrity sha512-KyJtKdOShg3rgYeIodzJcOJvQXEvZqrJCMmxkCQ6dw6ZXkSxdoAgYvQU0B7PTkITtwtJxe1yKy2k40+U2xMTbA==
+"@the-chat/gen-context@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.3.tgz#fd2be0c92947abb101f2d3d70b73001ef0e4d4d2"
+  integrity sha512-YOy9D+95JkeyZ3f8AWvjakkrDfCC3aruNn5VO7Fq+AF8yQcno94Px5FL4VRA4Wv8bmJGitgygPjyCM0DUqlklw==
 
-"@the-chat/query@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@the-chat/query/-/query-1.0.5.tgz#a45b9d41adb7efa3fe0332c204e6a86e4848ac14"
-  integrity sha512-lKeXrQrQjz430auFe5XtAT3wWehmHYYOVRShv9LEKr3xypTFnW9AwtzxIPejwqKrydlz8Pkdqv49YyfJMvs0aw==
+"@the-chat/query@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@the-chat/query/-/query-1.0.6.tgz#8c55a024ff09edc15a6ac323930c7deb35788279"
+  integrity sha512-Zevzw77JFfXSalKItITYb2kCeHW6dAN+zI3QVVdZ1KH+d+vLx1VkQ/bqQDrmzuGYVDSQ+p4cLF+De1c9vi8Zsw==
 
-"@the-chat/types@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@the-chat/types/-/types-1.0.4.tgz#46497a016024398743790fdf8ab2a8b5ee88aff7"
-  integrity sha512-x0HiDo0t2hoHaxY7iM5zMxHxG+6fGBxo/IiZve0wjhqCW08gkprU4np0LJDLugs9/4YunLi6EoP3OB7BBCHVTA==
+"@the-chat/types@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@the-chat/types/-/types-1.0.6.tgz#1252ef8c4e084e46b04aacef44cf879b41a492e5"
+  integrity sha512-rAhFXhSZO3Co/tgfnhm/gs3ceW1pzEnHw2HecdAWdIKOU3vNH4TeEo1Gs0aLZy9Cy96bblK+elX+Q4Dq/ijSQQ==
 
-"@the-chat/use-logs@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@the-chat/use-logs/-/use-logs-1.1.0.tgz#fcebe04b7ea8941f01d778623acbb0b566013367"
-  integrity sha512-DGNj/Z8Wz5YB9JuJMASIR0PQKARFfWSfaXDQ1QYy8YMWRdSG1gpIaWZXxh3hhp9pD66+g+BV7YLtkp/ote61mg==
+"@the-chat/use-logs@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@the-chat/use-logs/-/use-logs-1.1.1.tgz#2392acf15e88d6f98c73fb75d6581ada5a450ede"
+  integrity sha512-1E0tCCt0enDAQe1ACOzXFkhQi0VuCgTRirWE1XKWXWHbGV4ll+yUY8BnJhWX9GxtMcXJn9eBptB+mmeXFP7hog==
   dependencies:
-    "@the-chat/alert" "^1.1.0"
+    "@the-chat/alert" "^1.1.1"
     next-i18next "^10.4.0"
 
-"@the-chat/use-user@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@the-chat/use-user/-/use-user-1.0.7.tgz#1fb11282186fe593cee78a2f9b69c47e265baa68"
-  integrity sha512-Ftqr5QJ04HNUUqVKOB8d9eHfA/O62MNPScy8k/f8Qsq5GfxGID7/63GDRg2rh0KRPKoWUJ7RkRsG2VKlcj7cXw==
+"@the-chat/use-user@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@the-chat/use-user/-/use-user-1.1.2.tgz#3beec3124c7ef19ff8fa7a97955fe1b4e90d784f"
+  integrity sha512-quAJwMV4RNYdV/eQiBGW1rHg3rD+DpNbLDsLna0tYrCvH18R1gQ+CuRG4r5F15PSBYLZsjelER0lk1IC5eyLyg==
   dependencies:
-    "@the-chat/db" "^1.0.5"
-    "@the-chat/gen-context" "^1.0.8"
-    "@the-chat/types" "^1.0.4"
+    "@the-chat/db" "^1.0.6"
+    "@the-chat/gen-context" "^1.1.3"
+    "@the-chat/types" "^1.0.6"
     firebase "^9.6.7"
     next-i18next "^10.3.0"
     react "^17.0.2"
