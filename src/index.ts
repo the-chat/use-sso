@@ -8,20 +8,17 @@ import { useRouter } from "next/router"
 import { AllUserData } from "@the-chat/use-user"
 import { UseMyContext } from "@the-chat/gen-context"
 import { useEffect } from "react"
-
-const DEFAULT_SSO_HOST = "https://the-chat-sso.vercel.app" as const
+import { SSO } from "@the-chat/config"
 
 const getSSO = <T extends BaseUserData>(
   auth: Auth,
   useUserData: UseMyContext<AllUserData<T>>,
-  SSOHost: string = DEFAULT_SSO_HOST
+  SSOHost: string = SSO.DEFAULT_SSO_HOST
 ) => {
   const getSSOLink = () =>
     setQuery(SSOHost, {
       "return-url": location.toString(),
     })
-
-  const getTokenUrl = SSOHost + "/api/token"
 
   const useSSO = () => {
     const data = useUserData()
@@ -40,7 +37,7 @@ const getSSO = <T extends BaseUserData>(
             handleError(t("error.sign-in-token"))
           )
 
-        axios(getTokenUrl)
+        axios(SSOHost + SSO.getSSOTokenUrl)
           .then(({ data }) => {
             if (data.code)
               switch (data.code) {
