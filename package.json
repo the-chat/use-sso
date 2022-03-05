@@ -6,9 +6,13 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "prepublish": "rm -rf dist&&tsc"
+  },
   "repository": "git://github.com/the-chat/use-sso",
   "dependencies": {
-    "@the-chat/query": "^1.0.5",
+    "@the-chat/config": "^1.0.0",
+    "@the-chat/query": "^1.0.6",
     "@the-chat/use-logs": "^1.1.0",
     "axios": "^0.26.0",
     "firebase": "^9.6.7",
@@ -17,8 +21,8 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "@the-chat/gen-context": "^1.0.8",
-    "@the-chat/use-user": "^1.0.7",
-    "@the-chat/types": "^1.0.4"
+    "@the-chat/gen-context": "^1.1.1",
+    "@the-chat/types": "^1.0.6",
+    "@the-chat/use-user": "^1.0.8"
   }
 }
