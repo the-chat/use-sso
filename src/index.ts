@@ -1,13 +1,13 @@
 import useLogs from "@the-chat/use-logs"
-import {useTranslation} from "next-i18next"
-import {BaseUserData} from "@the-chat/types"
+import { useTranslation } from "next-i18next"
+import { BaseUserData } from "@the-chat/types"
 import axios from "axios"
-import {Auth, signInWithCustomToken} from "firebase/auth"
-import {getQuery, setQuery} from "@the-chat/query"
-import {useRouter} from "next/router"
-import {AllUserData} from "@the-chat/use-user"
-import {UseMyContext} from "@the-chat/gen-context"
-import {useEffect} from "react"
+import { Auth, signInWithCustomToken } from "firebase/auth"
+import { getQuery, setQuery } from "@the-chat/query"
+import { useRouter } from "next/router"
+import { AllUserData } from "@the-chat/use-user"
+import { UseMyContext } from "@the-chat/gen-context"
+import { useEffect } from "react"
 
 const DEFAULT_SSO_HOST = "https://the-chat-sso.vercel.app" as const
 
@@ -25,10 +25,10 @@ const getSSO = <T extends BaseUserData>(
 
   const useSSO = () => {
     const data = useUserData()
-    const [user, , {loading, error}] = data
-    const {replace} = useRouter()
-    const {t} = useTranslation("sso")
-    const {handleError} = useLogs(() => {})
+    const [user, , { loading, error }] = data
+    const { replace } = useRouter()
+    const { t } = useTranslation("sso")
+    const { handleError } = useLogs(() => {})
 
     const signInLocally = () => {
       if (!user && !loading && !error) {
@@ -41,7 +41,7 @@ const getSSO = <T extends BaseUserData>(
           )
 
         axios(getTokenUrl)
-          .then(({data}) => {
+          .then(({ data }) => {
             if (data.code)
               switch (data.code) {
                 // if user not signed in globally
@@ -65,7 +65,7 @@ const getSSO = <T extends BaseUserData>(
     }, [])
   }
 
-  return {getSSOLink, useSSO}
+  return { getSSOLink, useSSO }
 }
 
 export default getSSO
