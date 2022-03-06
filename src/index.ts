@@ -16,8 +16,7 @@ const getSSO = (auth: Auth, SSOHost: string = SSO.DEFAULT_SSO_HOST) => {
 
   // todo?: useUser handle error
   const useSSO = () => {
-    const data = useUser()
-    const [user, , { loading, error }] = data
+    const [user, , { loading, error }] = useUser()
     const { replace } = useRouter()
     const { t } = useTranslation("sso")
     const { handleError } = useLogs(() => {})
