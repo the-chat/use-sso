@@ -5,23 +5,19 @@ import axios from "axios"
 import { Auth, signInWithCustomToken } from "firebase/auth"
 import { getQuery, setQuery } from "@the-chat/query"
 import { useRouter } from "next/router"
-import { AllUserData } from "@the-chat/use-user"
+import { useUser } from "@the-chat/use-user"
 import { UseMyContext } from "@the-chat/gen-context"
 import { useEffect } from "react"
 import { SSO } from "@the-chat/config"
 
-const getSSO = <T extends BaseUserData>(
-  auth: Auth,
-  useUserData: UseMyContext<AllUserData<T>>,
-  SSOHost: string = SSO.DEFAULT_SSO_HOST
-) => {
+const getSSO = (auth: Auth, SSOHost: string = SSO.DEFAULT_SSO_HOST) => {
   const getSSOLink = () =>
     setQuery(SSOHost, {
       "return-url": location.toString(),
     })
 
   const useSSO = () => {
-    const data = useUserData()
+    const data = useUser()
     const [user, , { loading, error }] = data
     const { replace } = useRouter()
     const { t } = useTranslation("sso")
