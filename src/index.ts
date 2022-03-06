@@ -16,6 +16,7 @@ const getSSO = (auth: Auth, SSOHost: string = SSO.DEFAULT_SSO_HOST) => {
       "return-url": location.toString(),
     })
 
+  // todo?: useUser handle error
   const useSSO = () => {
     const data = useUser()
     const [user, , { loading, error }] = data
@@ -55,7 +56,7 @@ const getSSO = (auth: Auth, SSOHost: string = SSO.DEFAULT_SSO_HOST) => {
 
     useEffect(() => {
       signInLocally()
-    }, [])
+    }, [user, loading, error])
   }
 
   return { getSSOLink, useSSO }
