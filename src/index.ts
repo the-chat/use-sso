@@ -1,12 +1,10 @@
 import useLogs from "@the-chat/use-logs"
 import { useTranslation } from "next-i18next"
-import { BaseUserData } from "@the-chat/types"
 import axios from "axios"
 import { Auth, signInWithCustomToken } from "firebase/auth"
 import { getQuery, setQuery } from "@the-chat/query"
 import { useRouter } from "next/router"
 import { useUser } from "@the-chat/use-user"
-import { UseMyContext } from "@the-chat/gen-context"
 import { useEffect } from "react"
 import { SSO } from "@the-chat/config"
 
