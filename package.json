@@ -1,6 +1,6 @@
 {
   "name": "@the-chat/use-sso",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
@@ -14,11 +14,11 @@
     "@the-chat/config": "^1.0.0",
     "@the-chat/query": "^1.0.6",
     "@the-chat/use-logs": "^1.1.1",
+    "@the-chat/use-user": "^1.1.5",
     "axios": "^0.26.0",
     "firebase": "^9.6.7",
     "next": "^12.1.0",
     "next-i18next": "^10.4.0",
-    "react": "^17.0.2",
-    "@the-chat/use-user": "^1.1.5"
+    "react": "^17.0.2"
   }
 }
