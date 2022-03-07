@@ -15,7 +15,7 @@ const getSSO = (auth: Auth, SSOHost: string = SSO.DEFAULT_SSO_HOST) => {
     })
 
   // todo?: useUser handle error
-  const useSSO = () => {
+  const useSSO = (newUser = true) => {
     const [, user, { loading, error }] = useUser()
     const { replace } = useRouter()
     const { t } = useTranslation("sso")
@@ -37,7 +37,7 @@ const getSSO = (auth: Auth, SSOHost: string = SSO.DEFAULT_SSO_HOST) => {
               switch (data.code) {
                 // if user not signed in globally
                 case "not-signed-in":
-                  replace(getSSOLink())
+                  newUser && replace(getSSOLink())
                   break
               }
             else if (data.token)
