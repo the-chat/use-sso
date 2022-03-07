@@ -40,15 +40,25 @@ const useSSO = (
             switch (data.code) {
               // if user not signed in globally
               case "not-signed-in":
-                newUser && replace(getSSOLink())
+                newUser && replace(getSSOLink(SSOHost))
                 break
             }
-          else if (data.token)
+          else if (data.token) {
             // if user signed in globally
-            signInWithCustomToken(auth, data.token).catch(
-              handleError(t("error.sign-in-token"))
-            )
-          else handleError(t("error.get-token-code-" + data.code))()
+            signInWithCustomToken(auth, data.token)
+              .then(() => {
+                window.history.replaceState(
+                  null,
+                  "",
+                  setQuery(location.toString(), (prevQuery) => {
+                    delete prevQuery.token
+
+                    return prevQuery
+                  })
+                )
+              })
+              .catch(handleError(t("error.sign-in-token")))
+          } else handleError(t("error.get-token-code-" + data.code))()
         })
         .catch(handleError(t("error.get-token-request")))
     }
