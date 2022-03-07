@@ -777,10 +777,10 @@
     "@mui/styles" "^5.4.1"
     notistack "^2.0.3"
 
-"@the-chat/config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@the-chat/config/-/config-1.0.0.tgz#b598026f8e7fcf82784cae05166b516f00511200"
-  integrity sha512-XUd8JRk7Y9XaHNeVI6hffbwHO+ecwiTIIJc0GZV0TjzNcJqL+oYpH0XDzMHjMiIi1V4AQ6U92dnMLC1s8M+F/g==
+"@the-chat/config@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@the-chat/config/-/config-1.0.3.tgz#34765052e65c16848108fb0ca4a929657d4f8b0a"
+  integrity sha512-3QL7Yin9qWajRAueeLojeVeJT/OarO+eQF4TuhqH9O8/6iXkhNR6xfiP5JRaPeOFN9p1667kMqnehKt/aZMWwQ==
 
 "@the-chat/db@^1.0.6":
   version "1.0.6"
