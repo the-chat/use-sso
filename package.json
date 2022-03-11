@@ -1,6 +1,6 @@
 {
   "name": "@the-chat/use-sso",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
@@ -11,7 +11,7 @@
   },
   "repository": "git://github.com/the-chat/use-sso",
   "dependencies": {
-    "@the-chat/config": "^1.0.3",
+    "@the-chat/config": "^1.0.4",
     "@the-chat/query": "^1.0.6",
     "@the-chat/use-logs": "^1.1.1",
     "@the-chat/use-user": "^1.1.6",
