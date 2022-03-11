@@ -20,7 +20,7 @@ const useSSO = (
   newUser = true
 ) => {
   const [, user, { loading, error }] = useUser()
-  const { replace } = useRouter()
+  const { replace } = useRouter() || { replace() {} }
   const { t } = useTranslation("sso")
   const { handleError } = useLogs(() => {})
 
