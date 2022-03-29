@@ -8,17 +8,13 @@ import { useUser } from "@the-chat/use-user"
 import { useEffect } from "react"
 import { SSO } from "@the-chat/config"
 
-const getSSOLink = (SSOHost: string = SSO.DEFAULT_SSO_HOST) =>
-  setQuery(SSOHost, {
+const setArgsForSSO = (host: string) =>
+  setQuery(host, {
     "return-url": location.toString(),
   })
 
 // todo?: useUser handle error
-const useSSO = (
-  auth: Auth,
-  SSOHost: string = SSO.DEFAULT_SSO_HOST,
-  newUser = true
-) => {
+const useSSO = (auth: Auth, newUser: boolean) => {
   const [, user, { loading, error }] = useUser()
   const { replace } = useRouter() || { replace() {} }
   const { t } = useTranslation("sso")
@@ -34,13 +30,13 @@ const useSSO = (
           handleError(t("error.sign-in-token"))
         )
 
-      axios(SSOHost + SSO.getSSOTokenUrl)
+      axios(SSO.HOST + SSO.getSSOTokenUrl)
         .then(({ data }) => {
           if (data.code)
             switch (data.code) {
               // if user not signed in globally
               case "not-signed-in":
-                newUser && replace(getSSOLink(SSOHost))
+                newUser && replace(setArgsForSSO(SSO.HOST))
                 break
             }
           else if (data.token) {
@@ -69,5 +65,5 @@ const useSSO = (
   }, [user, loading, error])
 }
 
-export { getSSOLink }
+export { setArgsForSSO }
 export default useSSO
