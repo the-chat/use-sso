@@ -11,7 +11,7 @@
   },
   "repository": "git://github.com/the-chat/use-sso",
   "dependencies": {
-    "@the-chat/config": "^1.0.4",
+    "@the-chat/config": "^1.0.5",
     "@the-chat/query": "^1.0.6",
     "@the-chat/use-logs": "^1.1.1",
     "@the-chat/use-user": "^1.1.6",
