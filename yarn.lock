@@ -785,14 +785,6 @@
   dependencies:
     "@types/node" "^17.0.21"
 
-"@the-chat/db@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.9.tgz#312e08e8c8bb9bfb313291567a1b947dbf2a91d8"
-  integrity sha512-y3wf8T2MwGkXY/+R9BEg5EdPEsnUc1iDlwk6GnTr+WS81ah9blzdZkHM1xyLGwC6hSxpQYMY4moMLen9OO341g==
-  dependencies:
-    firebase "^9.6.7"
-    react-firebase-hooks "^4.0.1"
-
 "@the-chat/gen-context@^1.1.8":
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.8.tgz#fb6a84192b36eb5f885444b877365c397066ff35"
@@ -811,12 +803,11 @@
     "@the-chat/alert" "^1.1.5"
     next-i18next "^10.4.0"
 
-"@the-chat/use-user@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@the-chat/use-user/-/use-user-2.0.3.tgz#6ed31464948eba2b281c6336fae54ad59fa549d8"
-  integrity sha512-ofYpzs95ppTIyM0w7ZpN/TkYi4dBe0zo+znrMqexxf/dbQ6S86iQZPxy1bAJ2WVbmSigl4wL4qQHndCCMyeUlw==
+"@the-chat/use-user@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@the-chat/use-user/-/use-user-2.0.4.tgz#3d197e619f150c78a529368c739e6b4228ba8b74"
+  integrity sha512-7TyZfV8WyPxSLx+aKgrDjIkUCufGBgVAUShXaKPzinmtTvcAaMtHx0Itvkm84B9gpSJ3Bk0InX4tAVUeXj2y4A==
   dependencies:
-    "@the-chat/db" "^1.0.9"
     "@the-chat/gen-context" "^1.1.8"
     "@the-chat/use-logs" "^1.1.4"
     firebase "^9.6.7"
@@ -1545,11 +1536,6 @@ react-firebase-hooks@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-firebase-hooks/-/react-firebase-hooks-4.0.1.tgz#5c2483b0a240eb05cb9467cb1c07b2c721bef6c2"
   integrity sha512-JinNQRMzu905KWSCWppOZTUeOJArXvWdcTAsamjgDX/ZMF9QH5d+BZpnapEaIL70ifCDe/Ax9wzn9vlAufIymw==
-
-react-firebase-hooks@^4.0.1:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/react-firebase-hooks/-/react-firebase-hooks-4.0.2.tgz#60e98f5bacc4550920444c0667a710e4670d39f5"
-  integrity sha512-DwykuPHfnGIHbJYgRxh3sacfdeEyRxlqwBOdwClkA07s9Shi9gqcOWgMzOPbXPbP6o94YDnNW2yP42opgQs7Nw==
 
 react-i18next@^11.8.13:
   version "11.15.5"
